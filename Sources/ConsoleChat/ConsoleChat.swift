@@ -52,7 +52,6 @@ func askChat(prompt: String) async {
         }
         print()
         print()
-        print("This is \u{001B}[1mbold\u{001B}[0m text.")
         
     } catch {
         print("Error streaming response: \(error.localizedDescription)")
