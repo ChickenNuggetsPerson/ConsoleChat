@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:ConsoleChat}",
+            "name": "Debug ConsoleChat",
+            "program": "${workspaceFolder:ConsoleChat}/.build/debug/ConsoleChat",
+            "preLaunchTask": "swift: Build Debug ConsoleChat"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:ConsoleChat}",
+            "name": "Release ConsoleChat",
+            "program": "${workspaceFolder:ConsoleChat}/.build/release/ConsoleChat",
+            "preLaunchTask": "swift: Build Release ConsoleChat"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:ConsoleChat}",
+            "name": "Debug chat,",
+            "program": "${workspaceFolder:ConsoleChat}/.build/debug/chat,",
+            "preLaunchTask": "swift: Build Debug chat,"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:ConsoleChat}",
+            "name": "Release chat,",
+            "program": "${workspaceFolder:ConsoleChat}/.build/release/chat,",
+            "preLaunchTask": "swift: Build Release chat,"
+        }
+    ]
+}
