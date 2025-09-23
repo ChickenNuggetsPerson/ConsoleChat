@@ -52,7 +52,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "this is a test"
+            argument = "What are some cool programming projects"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

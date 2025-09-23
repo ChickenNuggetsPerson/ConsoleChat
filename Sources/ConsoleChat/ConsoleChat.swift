@@ -65,8 +65,10 @@ class Response {
     init() {}
     
     public func newPartial(partial: String) {
-        let ds = partial.trimmingPrefix(content)
-        content = partial
+        let adjusted = partial.replacing("**", with: "")
+        
+        let ds = adjusted.trimmingPrefix(content)
+        content = adjusted
         
         print(ds, terminator: "")
     }
