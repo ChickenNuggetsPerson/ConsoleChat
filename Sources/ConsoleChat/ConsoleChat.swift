@@ -59,7 +59,7 @@ func askChat(prompt: String) async {
 
 func printChat(question: String, response: String) {
     let (height, width) = getTerminalSize()
-    var buffer = newBuffer(width: width, height: height)
+    var buffer = newBuffer(width: width, height: height - 1)
     
     drawTextInBox(&buffer, text: "   \(question)", header: "Question:", x: 2, y: 1, width: width * 2/3)
     drawTextInBox(&buffer, text: response, x: 1, y: 6, width: width - 2)
