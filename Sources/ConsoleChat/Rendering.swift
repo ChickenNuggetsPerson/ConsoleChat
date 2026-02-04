@@ -140,7 +140,7 @@ func calcWrappedText(text: String, maxWidth: Int) -> WrappedText {
 
 
 
-func drawTextInBox(_ buffer: inout [[Character]], text: String, header: String? = nil, x: Int, y: Int, width: Int, padding: Int = 1) {
+func drawTextInBox(_ buffer: inout [[Character]], text: String, header: String? = nil, x: Int, y: Int, width: Int, padding: Int = 1) -> (Int, Int) {
     let wrappedText = calcWrappedText(text: text, maxWidth: width - 2 - 2 * padding)
     let headerShift = header == nil ? 0 : 1
     
@@ -150,6 +150,7 @@ func drawTextInBox(_ buffer: inout [[Character]], text: String, header: String? 
     if (header != nil) {
         drawWrappedText(&buffer, text: header!, x: x + padding + 1, y: y + padding + 1, maxWidth: width)
     }
+    return (width, wrappedText.height + 1 + padding * 2 + headerShift)
 }
 
 
